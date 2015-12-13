@@ -6,7 +6,7 @@
         "sourceMap": true,
         "preserveConstEnums": true
     },
-    "buildOnSave": false,
+    "buildOnSave": true,
     "compileOnSave": false,
     "exclude": [
       "**/*.d.ts"
@@ -16,7 +16,9 @@
         "./challenges/day-12/part-1/solution.ts",
         "./challenges/day-12/part-1/inputs.ts",
         "./challenges/day-12/part-2/solution.ts",
-        "./challenges/day-12/part-2/inputs.ts"
+        "./challenges/day-12/part-2/inputs.ts",
+        "./challenges/day-13/part-1/solution.ts",
+        "./challenges/day-13/part-1/inputs.ts",
     ],
     "atom": {
         "rewriteTsconfig": true
