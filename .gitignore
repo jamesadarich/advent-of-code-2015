@@ -1,0 +1,9 @@
+#npm
+node_modules
+
+#tsd
+typings
+
+#TypeScript
+*.js
+*.js.map
