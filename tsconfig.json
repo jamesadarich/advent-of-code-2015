@@ -13,6 +13,10 @@
     ],
     "files": [
         "./gulpfile.ts",
+        "./challenges/day-9/part-1/solution.ts",
+        "./challenges/day-9/part-1/inputs.ts",
+        "./challenges/day-9/part-2/solution.ts",
+        "./challenges/day-9/part-2/inputs.ts",
         "./challenges/day-10/part-1/solution.ts",
         "./challenges/day-10/part-1/inputs.ts",
         "./challenges/day-10/part-2/solution.ts",
