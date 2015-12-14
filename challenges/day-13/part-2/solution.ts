@@ -42,6 +42,23 @@ export class Solution {
      });
     }
 
+
+     var me = new Person();
+     me.name = 'James';
+
+    for (var i = 0; i < people.length; i++) {
+      people[i].seatingPreferences.push({
+        person: me,
+        happinessChange: 0
+     });
+     me.seatingPreferences.push({
+      person: people[i],
+      happinessChange: 0
+    });
+   }
+
+   console.log(people);
+
     var scores = this._findAllScores(people[0], [people[0]], [], 0);
 
     console.log(scores);
