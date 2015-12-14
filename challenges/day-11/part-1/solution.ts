@@ -15,8 +15,27 @@ export class Solution {
            }
         }
 
-        return input;
+        if (input.indexOf('i') === -1 && input.indexOf('o') === -1 && input.indexOf('l') === -1) {
+           var pairs = [];
+           for (var i = 1; i < input.length; i++) {
+             if (input.charCodeAt(i - 1) === input.charCodeAt(i) && pairs.indexOf(input[i]) === -1) {
+                pairs.push(input[i]);
+             }
+          }
 
+          if (pairs.length >= 2) {
+
+
+
+            for (var i = 2; i < input.length; i++) {
+              if (input.charCodeAt(i - 1) === input.charCodeAt(i) - 1 && input.charCodeAt(i - 2) === input.charCodeAt(i - 1) - 1) {
+
+                   return input;
+              }
+           }
+          }
+
+        }
      }
    }
 }
