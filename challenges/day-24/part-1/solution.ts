@@ -4,8 +4,8 @@ export class Solution {
     let presents = input.split('\n').map((present) => parseInt(present.trim()));
 
 
-    let balancedSection = presents.reduce((x, y) => x + y);
-
+    let balancedSection = presents.reduce((x, y) => x + y) / 3;
+    console.log(balancedSection);
 
     let validConfigurations = this._findCombos(presents, balancedSection, [], [[], [], []])
 
@@ -19,10 +19,12 @@ export class Solution {
           if (currentCombo[j].length > 0 && currentCombo[j].reduce((x, y) => x + y) + remainingPossibilities[i] > target){
             continue;
           }
-          this._findCombos(remainingPossibilities.slice(i + 1, remainingPossibilities.length), target, combos, currentCombo.concat([remainingPossibilities[i]]));
+          let newCombo = currentCombo[j].concat([remainingPossibilities[i]]);
+          console.log(newCombo);
+          this._findCombos(remainingPossibilities.slice(i + 1, remainingPossibilities.length), target, combos, newCombo);
         }
      }
-
+     console.log(currentCombo);
      combos.push(currentCombo);
 
       return combos;
